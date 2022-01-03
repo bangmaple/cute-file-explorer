@@ -1,0 +1,19 @@
+input[type=text] {
+    margin-top: 0.25rem;
+    border-radius: 3px;
+    border: 2px solid var(--background-pastel-color);
+    color: var(--pastel-color);
+    font-family: 'DS SweetKiss';
+    font-size: 1.5rem;
+    width: 10rem;
+}
+
+::placeholder {
+    -webkit-text-stroke: 1px white;
+    font-weight: lighter;
+    color: var(--background-pastel-color);
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: fontAwesome;
+    color: var(--pastel-color);
+}

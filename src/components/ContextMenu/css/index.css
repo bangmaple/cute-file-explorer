@@ -1,0 +1,31 @@
+.react-contexify__item:not(.react-contexify__item--disabled):hover > .react-contexify__item__content,
+.react-contexify__item:not(.react-contexify__item--disabled):focus > .react-contexify__item__content {
+    background-color: var(--background-pastel-color) !important;
+    color: #fff !important;
+    font-size: 1.25rem;
+}
+
+.react-contexify__item {
+    font-size: 1.25rem;
+
+}
+
+
+.react-contexify__theme--light .react-contexify__item__content {
+    color: var(--pastel-color);
+}
+
+.react-contexify__theme--light .react-contexify__separator {
+    background-color: var(--background-pastel-color);
+  }
+
+
+  .react-contexify__will-enter--scale {
+    transform-origin: top left;
+    animation: react-contexify__scaleIn 0.1s;
+  }
+
+  .react-contexify__will-leave--scale {
+    transform-origin: top left;
+    animation: react-contexify__scaleOut 0.1s;
+  }

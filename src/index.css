@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {font-family: "DS SweetKiss"; src: url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.eot"); src: url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.woff") format("woff"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.svg#DS SweetKiss") format("svg"); }
+
+:root {
+  --background-pastel-color: #f6ccc3;
+  --pastel-color: #f99fa4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.c-pastel {
+  color: var(--pastel-color);
+}
+
+.bc-pastel {
+  background-color: var(--pastel-color);
+}
+
+.c-background-pastel {
+  color: var(--background-pastel-color);
+}
+
+.bc-background-pastel {
+  background-color: var(--background-pastel-color);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.font-2r {
+  font-size: 2rem;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6ccc3;
+  margin: 0;
+  padding: 0;
+  font-family: 'DS SweetKiss', 'Helvetica', FontAwesome, sans-serif;
+
 }

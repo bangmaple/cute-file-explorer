@@ -1,0 +1,12 @@
+.nav-button {
+    background-color: var(--background-pastel-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.nav-button:hover {
+    background-color: var(--pastel-color);
+}

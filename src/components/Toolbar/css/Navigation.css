@@ -1,0 +1,26 @@
+
+.app-back-forward-button {
+    color: #fff;
+    background-color: var(--pastel-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .app-back-forward-button:hover {
+    color: var(--pastel-color);
+    border: 1px solid var(--background-pastel-color);
+    background-color: #fff;
+  
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }

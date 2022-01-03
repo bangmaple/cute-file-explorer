@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    font-size: 2rem;
+    color: var(--pastel-color);
+    margin: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .item:hover {
+    background-color: var(--background-pastel-color);
+  }
+
+  .item:focus {
+    background-color: var(--background-pastel-color);
+    border: 2px solid var(--pastel-color);
+  }
