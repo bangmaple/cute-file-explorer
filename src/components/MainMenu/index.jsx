@@ -25,11 +25,11 @@ const MainMenu = () => {
 
   const RenderItem = ({item}) => {
       return (
-        <a onBlur={() => {
+        <a href="javascript:;" onBlur={() => {
           //setSelectedItem(undefined);
         }} onFocus={(e) => {
           dispatch(setSelectedItem(menuItems[e.target.id]));
-        }} id={item.id} href="#" className="item">
+        }} id={item.id} className="item">
          <RenderIconByType type={item.type}/>
          <span className="ml-1">{item.name}</span>
        </a>

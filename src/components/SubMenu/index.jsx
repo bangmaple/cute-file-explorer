@@ -22,7 +22,7 @@ const SubMenu = () => {
     return subMenuItems.map((item) => (
       <a key={item.id}
         onFocus={() => dispatch(setSelectedItem(item))}
-        href="#"
+        href="javascript:;"
         className="item"
       >
         <MenuItemIcon name={"cookie"} />
@@ -38,7 +38,7 @@ const SubMenu = () => {
           <a
             key={item.id}
             onFocus={() => dispatch(setSelectedItem(item))}
-            href="#"
+            href="javascript:;"
             className="item"
             style={{
               display: "flex",
