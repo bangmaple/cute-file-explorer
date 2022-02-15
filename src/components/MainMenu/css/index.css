@@ -1,3 +1,13 @@
+.menu {
+  border-top: 1px solid var(--pastel-color);
+  border-bottom: 1px solid var(--pastel-color);
+}
+
+.sub-menu {
+  width: 650px;
+  border-right: 1px solid var(--pastel-color);
+}
+
 .table {
     float: left;
     overflow-y: auto;

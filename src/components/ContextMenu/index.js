@@ -4,7 +4,7 @@ import MenuContextItem from './MenuContextItem';
 import './css/index.css';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { removeMenuItemById, setEditingItem, setMenuItems } from '../../features/slice';
+import { removeMenuItemById, setEditingItem, setMenuItems, toggleItemPreview } from '../../features/slice';
 
 const ContextMenu = ({MENU_ID}) => {
 
@@ -18,6 +18,13 @@ const ContextMenu = ({MENU_ID}) => {
 
     return (
         <Menu id={MENU_ID} theme="light">
+                  <Item onClick={({event, props}) => {
+                    console.log(selectedItem);
+            dispatch(toggleItemPreview());
+        }}>
+          <MenuContextItem icon="arrow-up-right-from-square" name="Open"/>
+        </Item>
+                  <Separator />
         <Item onClick={({event, props}) => {
             dispatch(setMenuItems([...menuItems, {
                 id: menuItems[menuItems.length - 1].id + 1,

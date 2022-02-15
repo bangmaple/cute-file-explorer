@@ -28,7 +28,7 @@ function App() {
     <div className="main">
       <Topbar/>
       <Toolbar/>
-      <div onContextMenu={handleContextMenu} className="menu">
+      <div onDoubleClick={handleContextMenu} onContextMenu={handleContextMenu} className="menu">
         <ContextMenu MENU_ID={MENU_ID}/>
         <MainMenu/>
         <SubMenu/>

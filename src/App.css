@@ -14,56 +14,6 @@ button:focus {
 
 }
 
-.app-filter-button-left {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-left: 2px solid var(--pastel-color);
-  border-right: 2px solid var(--pastel-color);
-}
-
-.app-filter-button-right {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-right: 2px solid var(--pastel-color);
-}
-
-.app-filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid var(--pastel-color);
-  border-bottom: 2px solid var(--pastel-color);
-  height: 2rem;
-  width: 2rem;
-  text-align: center;
-  color: var(--pastel-color);
-}
-
-.app-filter-button:hover {
-  color: #fff;
-  background-color: var(--pastel-color);
-}
-
-
-.app-title {
-  color: var(--pastel-color);
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: flex;
-  margin-left: 20rem;
-  justify-content: center;
-}
-
-
-.menu {
-  display: flex;
-  margin-top: 0.5rem;
-  height: 450px;
-  border-top: 1px solid var(--pastel-color);
-  border-bottom: 1px solid var(--pastel-color);
-}
-
 .menu-table-item {
   display: flex;
   font-size: 2rem;

@@ -1,4 +1,9 @@
 
+.forward-buttons {
+  display: flex;
+  margin-top: 0.1rem;
+}
+
 .app-back-forward-button {
     color: #fff;
     background-color: var(--pastel-color);

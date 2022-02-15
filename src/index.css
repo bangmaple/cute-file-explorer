@@ -1,5 +1,8 @@
-@font-face {font-family: "DS SweetKiss"; src: url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.eot"); src: url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.woff") format("woff"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c580b197f7a02858b194c373042ef0e7.svg#DS SweetKiss") format("svg"); }
+@font-face {font-family: "DS SweetKiss"; src: url("../public/font.woff2") format("woff2"); }
 
+* {
+  box-sizing: border-box;
+}
 :root {
   --background-pastel-color: #f6ccc3;
   --pastel-color: #f99fa4;

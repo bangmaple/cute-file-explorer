@@ -1,0 +1,9 @@
+.app-title {
+    color: var(--pastel-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    margin-left: 20rem;
+    justify-content: center;
+  }

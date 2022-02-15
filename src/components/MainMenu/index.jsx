@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedItem } from '../../features/slice';
 import { RefSelectedItemContext } from '../../Context';
 import './css/index.css';
+import { useLongPress } from 'use-long-press';
 
 const MainMenu = () => {
 
-  const refSelectedItem = useContext(RefSelectedItemContext);
   const itemEditing = useSelector((state) => state.itemEditing);
-  console.log(itemEditing);
   const menuItems = useSelector((state) => state.menuItems);
   const dispatch = useDispatch();
 
@@ -29,7 +28,7 @@ const MainMenu = () => {
 
   const RenderItem = ({item}) => {
       return (
-        <a ref={refSelectedItem} onBlur={() => {
+        <a onBlur={() => {
           //setSelectedItem(undefined);
         }} onFocus={(e) => {
           dispatch(setSelectedItem(menuItems[e.target.id]));
