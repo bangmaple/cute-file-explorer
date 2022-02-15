@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Topbar = () => {
     return (
-        <div style={{'display': 'flex'}}>
+        <div className="d-flex">
             <NavButtons/>
             <Title/>
         </div>

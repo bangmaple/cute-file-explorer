@@ -1,0 +1,1 @@
+export const SEARCHING_TIMEOUT = 400;

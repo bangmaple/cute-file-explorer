@@ -34,8 +34,12 @@ export const slice = createSlice({
         setEditingItem: (state, action) => {
             state.itemEditing = action.payload
         },
-        toggleListRendering: (state) => {
-            state.isListRendering = !state.isListRendering;
+        toggleListRendering: (state, action) => {
+            if (action.payload) {
+                state.isListRendering = true;
+            } else {
+                state.isListRendering = false;
+            }
         },
         toggleItemPreview: (state) => {
             state.isItemPreviewed = !state.isItemPreviewed;

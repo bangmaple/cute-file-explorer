@@ -6,6 +6,7 @@ import Toolbar from './components/Toolbar';
 import { useContextMenu } from 'react-contexify';
 import ContextMenu from './components/ContextMenu';
 import Topbar from './components/Topbar';
+import './lib.css';
 
 const MENU_ID = '1';
 

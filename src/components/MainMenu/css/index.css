@@ -1,11 +1,92 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .app-back-forward-button {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+  }
+  .main-sorting-nav {
+    margin-right: 1rem !important;
+  }
+  .app-filter-button {
+    margin-top: 0.2rem !important;
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+  }
+  .app-filter-button-left {
+    margin-left: 1rem !important;
+  }
+  input[type="text"] {
+    margin-top: 0.1rem !important;
+    height: 2.4rem !important;
+    width: 7.5rem !important;
+  }
+  .app-title {
+    margin-top: 0.75rem !important;
+    margin-left: 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .menu {
+    height: 290px;
+  }
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    width: 550px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    width: 550px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .table-item {
+    display: none;
+  }
+  .table {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .table {
+    display: block;
+  }
+}
+
 .menu {
   border-top: 1px solid var(--pastel-color);
   border-bottom: 1px solid var(--pastel-color);
-}
-
-.sub-menu {
-  width: 650px;
-  border-right: 1px solid var(--pastel-color);
 }
 
 .table {
@@ -62,28 +143,25 @@ input {
     margin-left: 22px;
     margin-top: 40px;
     width: 65px;
-       overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .force-overflow {
     min-height: 450px;
 }
 
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px var(--background-pastel-color);
 	border-radius: 0px;
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
 	width: 6px;
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
 	border-radius: 0px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: var(--pastel-color);

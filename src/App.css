@@ -2,16 +2,14 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .main {
   background-color: #fff;
   border-radius: 15px;
-  width: 1200px;
   height: 600px;
   box-shadow: 5px 10px #888888;
-
 }
 
 .menu-table-item {
@@ -38,4 +36,96 @@ button:focus {
   width: 3rem;
   background-color: var(--background-pastel-color);
   border-radius: 2px;
+}
+
+.border-right-1px-pastel-color {
+  border-right: 1px solid var(--pastel-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .main-sorting-nav {
+    margin-right: 1rem !important;
+  }
+  .app-filter-button {
+    margin-top: 0.2rem !important;
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+  }
+  .app-filter-button-left {
+    margin-left: 1rem !important;
+  }
+  input[type="text"] {
+    margin-top: 0.1rem !important;
+    height: 2.4rem !important;
+    width: 7.5rem !important;
+  }
+  .app-title {
+    margin-top: 0.75rem !important;
+    margin-left: 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .menu {
+    height: 290px;
+  }
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    width: 550px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .table-item {
+    border-right: none;
+  }
+  .table {
+    display: none;
+  }
+  .main {
+    width: 550px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .table-item {
+    display: none;
+  }
+  .main {
+    width: 950px;
+  }
+  .table {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .main {
+    width: 1200px !important;
+  }
+  .table {
+    display: block;
+  }
 }
