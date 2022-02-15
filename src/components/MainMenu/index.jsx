@@ -1,9 +1,6 @@
-import { useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedItem } from '../../features/slice';
-import { RefSelectedItemContext } from '../../Context';
 import './css/index.css';
-import { useLongPress } from 'use-long-press';
 
 const MainMenu = () => {
 
@@ -34,13 +31,13 @@ const MainMenu = () => {
           dispatch(setSelectedItem(menuItems[e.target.id]));
         }} id={item.id} href="#" className="item">
          <RenderIconByType type={item.type}/>
-         <span style={{'margin-left': '1rem'}}>{item.name}</span>
+         <span className="ml-1">{item.name}</span>
        </a>
       );
   };
 
     return (
-        <div className="table" style={{'border-right': '1px solid var(--pastel-color)'}}>
+        <div className="table border-right-1px-pastel-color">
           {menuItems.map((item) => 
               itemEditing
               ? <RenderSelectedItem item={item}/>
