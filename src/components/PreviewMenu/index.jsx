@@ -2,6 +2,7 @@ import "./css/index.css";
 import { useDispatch } from "react-redux";
 import { toggleItemPreview } from "../../features/slice";
 import TextTruncate from "react-text-truncate";
+import { Suspense } from "react";
 
 const PreviewMenu = ({ selectedItem }) => {
   const dispatch = useDispatch();
@@ -32,11 +33,13 @@ const PreviewMenu = ({ selectedItem }) => {
         </div>
       </div>
       <div className="preview-item-menu-image d-flex-center mt-1">
+        <Suspense fallback={<>CAC</>}>
         <img
           alt={selectedItem.name}
           src={selectedItem.image}
           className="preview-item-menu-image-size position-absolute"
         />
+        </Suspense>
       </div>
     </div>
   );
