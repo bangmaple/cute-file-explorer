@@ -21,14 +21,22 @@ const SubMenu = () => {
 
   const RenderAsList = () => {
     return subMenuItems.map((item) => (
-      <a key={item.id}
-      onClick={() => dispatch(setSelectedItem(item))}
+      <a
+        key={item.id}
+        onClick={() => dispatch(setSelectedItem(item))}
         onFocus={() => dispatch(setSelectedItem(item))}
         href="#"
         className="item d-flex"
       >
         <MenuItemIcon name={"cookie"} />
-        <span className="ml-1">{item.name}</span>
+        <span className="ml-1">
+          <TextTruncate
+            line={2}
+            element="span"
+            truncateText="..."
+            text={item.name}
+          />
+        </span>
       </a>
     ));
   };
@@ -66,7 +74,8 @@ const SubMenu = () => {
 
   return (
     <div className="position-relative">
-      <div className={`sub-menu sub-scrollbar ${
+      <div
+        className={`sub-menu sub-scrollbar ${
           !isListRendering ? "toggleIn" : ""
         }`}
       >

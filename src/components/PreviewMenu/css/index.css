@@ -5,9 +5,11 @@
     height: 400px;
     top: -402px;
   }
-
+  .preview-item-menu-image {
+    height: 80%;
+  }
   .preview-item-menu-image-size {
-    height: 300px;
+    height: 280px;
     border-radius: 5px;
   }
 }
@@ -19,7 +21,9 @@
     height: 610px;
     top: -604px;
   }
-
+  .preview-item-menu-image {
+    height: 85%;
+  }
   .preview-item-menu-image-size {
     height: 450px;
     border-radius: 10px;
@@ -61,4 +65,5 @@
 
 .preview-item-menu-image {
   border-top: 1px solid var(--pastel-color);
+  border-bottom: 1px solid var(--pastel-color);
 }

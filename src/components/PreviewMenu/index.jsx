@@ -1,6 +1,7 @@
 import "./css/index.css";
 import { useDispatch } from "react-redux";
 import { toggleItemPreview } from "../../features/slice";
+import TextTruncate from "react-text-truncate";
 
 const PreviewMenu = ({ selectedItem }) => {
   const dispatch = useDispatch();
@@ -20,12 +21,17 @@ const PreviewMenu = ({ selectedItem }) => {
           <a href="#" className="nav-button"></a>
           <a href="#" className="nav-button"></a>
         </div>
-        <div className="app-title">
+        <div className="app-title full-width d-flex-center">
           <i className="fas fa-cookie mr-1"></i>
-          {selectedItem.name}
+          <TextTruncate
+            line={1}
+            element="span"
+            truncateText="..."
+            text={selectedItem.name}
+          />
         </div>
       </div>
-      <div className="preview-item-menu-image d-flex-center full-height mt-1">
+      <div className="preview-item-menu-image d-flex-center mt-1">
         <img
           alt={selectedItem.name}
           src={selectedItem.image}
