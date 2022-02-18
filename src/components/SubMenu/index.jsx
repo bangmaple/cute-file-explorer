@@ -22,6 +22,7 @@ const SubMenu = () => {
   const RenderAsList = () => {
     return subMenuItems.map((item) => (
       <a key={item.id}
+      onClick={() => dispatch(setSelectedItem(item))}
         onFocus={() => dispatch(setSelectedItem(item))}
         href="#"
         className="item d-flex"
