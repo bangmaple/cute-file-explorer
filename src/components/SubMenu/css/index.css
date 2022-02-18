@@ -4,18 +4,8 @@
     height: 285px;
     width: 350px;
   }
-  .preview-item-menu {
-    width: 350px;
-    height: 400px;
-    border-radius: 10px;
-    top: -402px;
-  }
-  .preview-item-menu-image {
-    margin-top: 1rem;
-    height: 330px;
-  }
-  .preview-item-menu-image-size {
-    height: 250px;
+  .item-grid {
+    width: 155px;
   }
 }
 
@@ -25,49 +15,51 @@
     height: 488px;
     width: 550px;
   }
-  .preview-item-menu {
-    width: 550px;
-    height: 600px;
-    border-radius: 10px;
-    top: -566px;
-  }
-  .preview-item-menu-image {
-    margin-top: 1rem;
-    height: 540px;
-  }
-  .preview-item-menu-image-size {
-    height: 500px;
+  .item-grid {
+    width: 165px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .preview-item-menu {
-    width: 550px;
-    height: 600px;
-    border-radius: 10px;
-    top: -566px;
+  .sub-menu {
+    height: 488px;
+    width: 750px;
   }
-  .preview-item-menu-image {
-    margin-top: 1rem;
-    height: 540px;
-  }
-  .preview-item-menu-image-size {
-    height: 500px;
+  .item-grid {
+    width: 169px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .sub-menu {
+    height: 488px;
+    width: 500px;
+  }
+  .item-grid {
+    width: 230px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  .sub-menu {
+    width: 450px;
+  }
+  .item-grid {
+    width: 205px;
+  }
 }
+
+.menu-table-item-icon {
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--background-pastel-color);
+  border-radius: 2px;
+}
+
 .item {
-  display: flex;
   font-size: 2rem;
   color: var(--pastel-color);
   margin: 0.5rem;
@@ -85,7 +77,6 @@
 }
 
 .sub-menu {
-  border-right: none;
   border-right: 1px solid var(--pastel-color);
 }
 
@@ -127,37 +118,5 @@
   opacity: 1;
 }
 
-.nav-button {
-  background-color: var(--background-pastel-color);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  margin-left: 0.75rem;
-  margin-top: 0.75rem;
+.item-grid {
 }
-
-.nav-button:hover {
-  background-color: var(--pastel-color);
-}
-
-.preview-item-menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #fff;
-}
-
-.preview-item-menu-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid var(--pastel-color);
-}
-
-.grid-sub-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 155px;
-}
-

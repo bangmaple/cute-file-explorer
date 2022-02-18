@@ -1,31 +1,39 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .app-title {
+    margin-top: 0.75rem;
+    font-size: 1.5rem;
+  }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .app-title {
-    font-size: 2.5rem;
-    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
   }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .app-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .app-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .app-title {
     font-size: 3rem;
-    margin-left: 20rem;
   }
 }
 
@@ -33,5 +41,4 @@
     color: var(--pastel-color);
     text-transform: uppercase;
     font-weight: bold;
-    display: flex;
 }

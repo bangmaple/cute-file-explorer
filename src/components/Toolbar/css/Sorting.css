@@ -1,5 +1,4 @@
 .main-sorting-nav {
-  display: flex;
   margin-top: -0.1rem;
 }
 
@@ -17,9 +16,6 @@
 }
 
 .app-filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top: 2px solid var(--pastel-color);
   border-bottom: 2px solid var(--pastel-color);
   height: 2rem;
@@ -41,20 +37,23 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .main-sorting-nav {
-    margin-right: 1rem !important;
+    margin-right: 1rem;
   }
   .app-filter-button {
-    margin-top: 0.2rem !important;
-    height: 2.4rem !important;
-    width: 2.4rem !important;
+    margin-top: 0.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
   }
   .app-filter-button-left {
-    margin-left: 1rem !important;
+    margin-left: 1rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .main-sorting-nav {
+    margin-top: 0.1rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

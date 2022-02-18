@@ -1,40 +1,32 @@
-
 .forward-buttons {
-  display: flex;
   margin-top: 0.1rem;
 }
 
 .app-back-forward-button {
-    color: #fff;
-    background-color: var(--pastel-color);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-  }
-  
-  .app-back-forward-button:hover {
-    color: var(--pastel-color);
-    border: 1px solid var(--background-pastel-color);
-    background-color: #fff;
-  
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-  }
+  background-color: var(--pastel-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+}
 
-  /* Extra small devices (phones, 600px and down) */
+.app-back-forward-button:hover {
+  color: var(--pastel-color);
+  border: 1px solid var(--background-pastel-color);
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .app-back-forward-button {
-    width: 2.4rem !important;
-    height: 2.4rem !important;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 }
 

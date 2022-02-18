@@ -1,41 +1,24 @@
-@font-face {font-family: "DS SweetKiss"; src: url("../public/font.woff2") format("woff2"); }
+@font-face {
+  font-family: "DS SweetKiss";
+  src: url("../public/font.woff2") format("woff2");
+}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 :root {
   --background-pastel-color: #f6ccc3;
   --pastel-color: #f99fa4;
-}
-
-.c-pastel {
-  color: var(--pastel-color);
-}
-
-.bc-pastel {
-  background-color: var(--pastel-color);
-}
-
-.c-background-pastel {
-  color: var(--background-pastel-color);
-}
-
-.bc-background-pastel {
-  background-color: var(--background-pastel-color);
-}
-
-.d-flex {
-  display: flex;
-}
-
-.font-2r {
-  font-size: 2rem;
-}
-
-.d-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
@@ -43,9 +26,6 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #f6ccc3;
-  margin: 0;
-  padding: 0;
-  font-family: 'DS SweetKiss', 'Helvetica', FontAwesome, sans-serif;
-
+  background-color: var(--background-pastel-color);
+  font-family: "DS SweetKiss", "Helvetica", FontAwesome, sans-serif;
 }

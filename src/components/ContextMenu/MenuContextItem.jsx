@@ -2,7 +2,7 @@ const MenuContextItem = ({icon, name}) => {
     return (
         <>
           <i className={`fas fa-${icon}`}></i>
-          <span style={{'margin-left': '0.5rem'}}>
+          <span className="ml-1">
             {name}
           </span>
         </>

@@ -1,13 +1,5 @@
 .toolbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5em;
-}
-
-.left-toolbar {
-    display: flex;
-    justify-content: space-between;
-    width: 15rem;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
 }

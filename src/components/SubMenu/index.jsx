@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./css/index.css";
-import TextTruncate from "react-text-truncate"; // recommend
-import { setSelectedItem, toggleItemPreview } from "../../features/slice";
+import TextTruncate from "react-text-truncate";
+import { setSelectedItem } from "../../features/slice";
+import PreviewMenu from "../PreviewMenu";
 
 const MenuItemIcon = (props) => {
   return (
-    <div className="menu-table-item-icon">
+    <div className="menu-table-item-icon d-flex-center">
       <i className={`fas fa-${props.name}`}></i>
     </div>
   );
@@ -22,8 +23,8 @@ const SubMenu = () => {
     return subMenuItems.map((item) => (
       <a key={item.id}
         onFocus={() => dispatch(setSelectedItem(item))}
-        href="javascript:;"
-        className="item"
+        href="#"
+        className="item d-flex"
       >
         <MenuItemIcon name={"cookie"} />
         <span className="ml-1">{item.name}</span>
@@ -33,19 +34,13 @@ const SubMenu = () => {
 
   const RenderAsGrid = () => {
     return (
-      <div class="d-flex flex-wrap">
+      <div className="d-flex flex-wrap">
         {subMenuItems.map((item) => (
           <a
             key={item.id}
             onFocus={() => dispatch(setSelectedItem(item))}
-            href="javascript:;"
-            className="item"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              width: "155px",
-            }}
+            href="#"
+            className="item-grid item d-flex-center flex-column"
           >
             <MenuItemIcon
               onClick={() => dispatch(setSelectedItem(item))}
@@ -69,42 +64,15 @@ const SubMenu = () => {
   };
 
   return (
-    <div style={{ position: "relative" }}>
-      <div
-        style={{ position: "relative" }}
-        className={`sub-menu sub-scrollbar ${
+    <div className="position-relative">
+      <div className={`sub-menu sub-scrollbar ${
           !isListRendering ? "toggleIn" : ""
         }`}
       >
         {isListRendering ? <RenderAsList /> : <RenderAsGrid />}
       </div>
       {isItemPreviewed ? (
-        <div className="toggleIn preview-item-menu">
-          <div style={{ display: "flex" }}>
-            <div style={{ display: "flex" }}>
-              <div
-                className="nav-button"
-                onClick={() => dispatch(toggleItemPreview())}
-              ></div>
-              <div className="nav-button"></div>
-              <div className="nav-button"></div>
-            </div>
-            <div className="app-title">
-              <i
-                className="fas fa-cookie mr-1"
-              ></i>
-              {selectedItem.name}
-            </div>
-          </div>
-          <div className="preview-item-menu-image">
-            <img
-              alt={selectedItem.name}
-              className="preview-item-menu-image-size"
-              style={{ position: "absolute" }}
-              src={selectedItem.image}
-            />
-          </div>
-        </div>
+        <PreviewMenu selectedItem={selectedItem}></PreviewMenu>
       ) : (
         <></>
       )}
