@@ -33,13 +33,11 @@ const PreviewMenu = ({ selectedItem }) => {
         </div>
       </div>
       <div className="preview-item-menu-image d-flex-center mt-1">
-        <Suspense fallback={<>CAC</>}>
         <img
           alt={selectedItem.name}
           src={selectedItem.image}
           className="preview-item-menu-image-size position-absolute"
         />
-        </Suspense>
       </div>
     </div>
   );

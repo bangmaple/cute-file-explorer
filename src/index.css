@@ -21,11 +21,11 @@ button:focus {
   --pastel-color: #f99fa4;
 }
 
-body {
+html {
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
   background-color: var(--background-pastel-color);
   font-family: "DS SweetKiss", "Helvetica", FontAwesome, sans-serif;
+  justify-content: center;
+  align-items: center;
 }
