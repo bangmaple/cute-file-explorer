@@ -8,10 +8,12 @@ import Topbar from './components/Topbar';
 import './lib.css';
 import DescriptionMenu from './components/DescriptionMenu';
 import CardGame from "./components/CardGame";
+import { useEffect } from 'react';
 
 const MENU_ID = '1';
 
 function App() {
+  
 
   const { show } = useContextMenu({
     id: MENU_ID,

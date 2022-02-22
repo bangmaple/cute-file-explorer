@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -9,9 +9,20 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navigation from "./components/Navigation";
 import CardGame from "./components/CardGame";
 import MoneyLover from "./components/MoneyLover";
+import useFontFaceObserver from 'use-font-face-observer';
 
-ReactDOM.render(
-  <React.StrictMode>
+
+const EntryPoint = () => {
+
+  useEffect(() => {
+    const spinner = document.getElementById('spinner');
+    if (spinner) {
+      
+      spinner.style.display = 'none';
+    }
+  }, []);
+
+  return (<React.StrictMode>
     <Provider store={store}>
         <BrowserRouter>
             <Routes>
@@ -23,9 +34,10 @@ ReactDOM.render(
             </Routes>
         </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>);
+}
+
+ReactDOM.render(<EntryPoint/>,document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

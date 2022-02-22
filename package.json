@@ -21,6 +21,7 @@
     "react-tag-input": "^6.7.3",
     "react-text-truncate": "^0.17.0",
     "redux-logger": "^3.0.6",
+    "use-font-face-observer": "^1.1.77",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

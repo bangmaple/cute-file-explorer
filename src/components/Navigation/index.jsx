@@ -1,12 +1,13 @@
 import './css/index.css';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileCode, faGamepad, faMoneyBill, faClover } from '@fortawesome/free-solid-svg-icons'
 import {PASTEL_COLOR} from "../../constants/constant";
 import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
-    
+
+
     const navigate = useNavigate();
     
     return (<div className="main bg-white">
