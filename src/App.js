@@ -7,6 +7,7 @@ import ContextMenu from './components/ContextMenu';
 import Topbar from './components/Topbar';
 import './lib.css';
 import DescriptionMenu from './components/DescriptionMenu';
+import CardGame from "./components/CardGame";
 
 const MENU_ID = '1';
 
@@ -29,13 +30,12 @@ function App() {
     <div className="main bg-white">
       <Topbar/>
       <Toolbar/>
-      <div onDoubleClick={handleContextMenu}
-       onContextMenu={handleContextMenu}
-        className="menu">
+      <div>
         <ContextMenu MENU_ID={MENU_ID}/>
         <MainMenu/>
         <SubMenu/>
         <DescriptionMenu/>
+        
       </div>
     </div>
   );

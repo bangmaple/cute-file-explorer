@@ -5,11 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navigation from "./components/Navigation";
+import CardGame from "./components/CardGame";
+import MoneyLover from "./components/MoneyLover";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Navigation/>}/>
+                <Route path="/explorer" element={<App/>}/>
+                <Route path="/card" element={<CardGame/>}/>
+                <Route path="/money" element={<MoneyLover/>}/>
+                <Route path="/lucky" element={<CardGame/>}/>
+            </Routes>
+        </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

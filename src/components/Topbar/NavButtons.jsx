@@ -1,14 +1,17 @@
 import "./css/NavButtons.css";
+import {useNavigate} from "react-router-dom";
 
 const NavButtons = ({
   firstBtnAction = undefined,
   secondBtnAction = undefined,
   thirdBtnAction = undefined,
 }) => {
+    
+    const navigate = useNavigate();
   return (
     <div className="d-flex">
       <a
-        onClick={firstBtnAction !== undefined ? () => firstBtnAction() : <></>}
+        onClick={() => navigate("/")}
         role="button"
         href="#"
         className="nav-button"

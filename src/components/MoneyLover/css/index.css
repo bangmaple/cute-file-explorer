@@ -1,0 +1,97 @@
+.ReactModal__Overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 204, 195, 0.5) !important;
+}
+
+input[type="button"] {
+    background-color: var(--background-pastel-color);
+    color: var(--pastel-color);
+    font-family: "DS SweetKiss";
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    width: 7.25rem;
+    height: 2rem;
+}
+
+.modal-body {
+    border-top: 1px solid var(--pastel-color);
+    border-bottom: 1px solid var(--pastel-color);
+}
+
+button {
+    background-color: var(--background-pastel-color);
+    color: var(--pastel-color);
+    border: 1px solid var(--pastel-color);
+    font-family: "DS SweetKiss";
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 2rem;
+}
+
+.dropdown {
+    margin-top: 1rem;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid var(--pastel-color);
+    font-family: "DS SweetKiss", "Helvetica", FontAwesome, sans-serif;
+    color: var(--pastel-color);
+    font-weight: 600;
+    height: 2rem;
+}
+
+textarea {
+    margin-left: -0.75rem;
+    margin-top: 0.5rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: 1px solid var(--pastel-color);
+    color: var(--pastel-color);
+    font-family: "DS SweetKiss";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--pastel-color);
+    color: var(--pastel-color);
+    font-family: "DS SweetKiss";
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 2rem;
+}
+
+input[type="date"] {
+    margin-left: 1.7rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--pastel-color);
+    color: var(--pastel-color);
+    font-family: "DS SweetKiss";
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 2rem;
+}
+  
+  
+.add-modal {
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+    height: 400px;
+    width: 275px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}

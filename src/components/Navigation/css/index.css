@@ -1,0 +1,32 @@
+.navigation {
+    width:20%;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;    padding:1em;
+    line-height:1.5em;
+    background-color: var(--background-pastel-color);
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    border: solid 5px var(--pastel-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation:focus {
+    width:20%;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;    padding:1em;
+    line-height:1.5em;
+    background-color: var(--background-pastel-color);
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px #888888;
+
+}
+
+.text-pastel {
+    font-family: "DS SweetKiss", "Helvetica", FontAwesome, sans-serif;
+    color: var(--pastel-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
